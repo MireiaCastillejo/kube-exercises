@@ -7,12 +7,12 @@
  ## ¿Qué comando utilizarías para entrar dentro del pod?
  `kubectl exec --stdin --tty my-nginx -- /bin/bash`
  ## Necesitas visualizar el contenido que expone NGINX, ¿qué acciones debes llevar a cabo?
-Vemos en el puerto que esta mostrando y vamos a la dirección que nos marca.
+A partir del comando:
     `kubectl port-forward nginx 8080:80`
-Tambien podemos acceder dentro con el comando
-     `kubectl exec --stdin --tty my-nginx -- /bin/bash`
-Y accedemos a la carpeta donde contiene el html que es lo que expone: haciendo 
-`cd /usr/share/nginx/html`
+Podemos ver la ip local y el puerto en el que nos expone y acceder a el: http://127.0.0.1:8080/
+Otra forma:
+Acceder dentro del pod con el comando anterior y acceder a la carpeta donde contiene el html y ver que es lo que expone: haciendo 
+    `cd /usr/share/nginx/html`
 Accedemos dentro del html `cat index.html`
 
  ## Indica la calidad de servicio (QoS) establecida en el pod que acabas de crear. ¿Qué lo has mirado?
