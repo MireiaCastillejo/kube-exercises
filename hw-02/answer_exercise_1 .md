@@ -3,7 +3,6 @@
  ## ¿Cómo puedo obtener las últimas 10 líneas de la salida estándar (logs generados por la aplicación)?
  `k logs -f --tail 10 my-nginx`
  ## ¿Cómo podría obtener la IP interna del pod? Aporta capturas para indicar el proceso que seguirías.
- `kubectl get pods -l run=my-nginx -o yaml | grep podIP`
  `kubectl get pod -o wide`
  ## ¿Qué comando utilizarías para entrar dentro del pod?
  `kubectl exec --stdin --tty my-nginx -- /bin/bash`
