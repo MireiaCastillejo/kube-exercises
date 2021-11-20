@@ -15,13 +15,15 @@
 ```
   kubectl get svc
   ```
- <img width="960" alt="Captura de pantalla 2021-11-18 a las 21 28 35" src="https://user-images.githubusercontent.com/26769446/142722054-1cd3b73b-e1c3-4d8d-89b7-45d7bd502fc8.png">
+
+<img width="764" alt="Captura de pantalla 2021-11-20 a las 12 02 50" src="https://user-images.githubusercontent.com/26769446/142723917-11a44a09-35da-42bd-bf07-e6a221d086ee.png">
 
 3. Vemos la información de cada servicio
 ```
 kubectl describe service nginx-service1
 ```
-<img width="751" alt="Captura de pantalla 2021-11-20 a las 11 14 13" src="https://user-images.githubusercontent.com/26769446/142722691-60af0c8d-5ddd-4142-b75e-1500cfad7005.png">
+<img width="751" alt="Captura de pantalla 2021-11-20 a las 12 02 21" src="https://user-images.githubusercontent.com/26769446/142723924-cc19d83f-cdf1-4c88-9bfe-fb5acabb927e.png">
+
 ```
 kubectl describe service nginx-service2
 ```
