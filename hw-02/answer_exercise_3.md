@@ -28,8 +28,7 @@ kubectl describe service nginx-service1
 kubectl describe service nginx-service2
 ```
 <img width="751" alt="Captura de pantalla 2021-11-20 a las 11 14 39" src="https://user-images.githubusercontent.com/26769446/142722709-489f706a-ee4b-4b5b-bb99-65cdc8acec56.png">
-```
-kubectl describe service nginx-service3
 
-```
+``` kubectl describe service nginx-service3 ```
+
 <img width="751" alt="Captura de pantalla 2021-11-20 a las 11 14 52" src="https://user-images.githubusercontent.com/26769446/142722720-29e9a542-19d4-4dd9-8798-e88dcd6901be.png">
