@@ -13,6 +13,6 @@
 5. Se realiza un switch del tráfico a la versión 2, haciendo que el servicio que apuntaba a la primera versión pase apuntando a la segunda.
 ```kubectl patch service blue-green -p '{"spec":{"selector":{"version": "2.0"}}}'```
 
-6. Una vez realizado el cambio, volvemos a validar que el servicio apunta al deployment-green
+6. Una vez realizado el cambio, volvemos a validar que el servicio apunta al deployment-green.
 ```kubectl describe service blue-green```
       <img width="1435" alt="Captura de pantalla 2021-11-20 a las 10 36 42" src="https://user-images.githubusercontent.com/26769446/142721713-ac152bdf-fabe-441e-96f3-adb0aa826b16.png">
