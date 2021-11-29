@@ -6,9 +6,8 @@ Habilitamos el addon metrics-server para que el HPA pueda ver el uso de la CPU
 ``` minikube addons enable metrics-server```
 
 Seguidamente creamos los objetos
-```` kubectl apply -f deployment.yaml
-   kubectl apply -f service.yaml`
-````
+```` kubectl apply -f deployment.yaml ````
+````   kubectl apply -f service.yaml ````
 A continuación se realiza el autoscaling con el siguiente comando 
 ```kubectl autoscale deployment nginx-server --cpu-percent=50 --min=3 --max=6```
 
