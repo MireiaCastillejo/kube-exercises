@@ -27,17 +27,18 @@ rs.initiate({ _id: "rs0", version: 1, members: [
 ]});
 ``` 
 
-Vemos la basededatos
+Vemos la basededatos<br /> 
   ```   show dbs ``` 
-Creamos una nueva:
+Creamos una nueva:<br /> 
 ```     use basededatos``` 
 
-Insertamos datos:
+Insertamos datos:<br /> 
 ```  db.basededatos.insertOne({name: "Mireia", age: 26}))``` 
 
 
 A continuación vemos el cambio creado en la instancia mongod-1;  
-``` kubectl exec -it mongod-0 -- bash
+``` 
+    kubectl exec -it mongod-0 -- bash
     mongosh --quiet
     db.getMongo().setReadPref("secondary")
     show dbs
