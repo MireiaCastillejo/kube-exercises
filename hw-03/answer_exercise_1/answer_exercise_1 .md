@@ -1,14 +1,14 @@
 # Ejercicio 1 
    
  ## [Ingress Controller / Secrets] Crea los siguientes objetos de forma declarativa con las siguientes especificaciones:
-• Imagen: nginx
-• Version: 1.19.4
-• 3 replicas
-• Label: app: nginx-server
-• Exponer el puerto 80 de los pods
-• Limits: CPU: 20 milicores 
+  * Imagen: nginx
+  * Version: 1.19.4
+  * 3 replicas
+  * Label: app: nginx-server
+  * Exponer el puerto 80 de los pods
+  * Limits: CPU: 20 milicores 
           Memoria: 128Mi
-• Requests: CPU: 20 milicores 
+  * Requests: CPU: 20 milicores 
             Memoria: 128Mi
 
 
@@ -60,5 +60,5 @@ Ejecutamos el comando
 
 ``` minikube tunnel```
 
-Accedemos a la página
+Accedemos a la página <br /> 
 <img width="766" alt="Captura de pantalla 2021-11-29 a las 11 42 07" src="https://user-images.githubusercontent.com/26769446/143856796-263db8ba-4c54-4a1a-ae13-5755350e86d2.png">
