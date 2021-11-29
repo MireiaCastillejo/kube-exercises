@@ -25,21 +25,28 @@ rs.initiate({ _id: "rs0", version: 1, members: [
  { _id: 1, host: "mongo-1.mongo-svc.default.svc.cluster.local:27017" }, 
  { _id: 2, host: "mongo-2.mongo-svc.default.svc.cluster.local:27017" } 
 ]});
-Vemos la basededatos
-    show dbs
-Creamos una nueva:
-    use basededatos
-Insertamos datos:
-    db.basededatos.insertOne({name: "Mireia", age: 26}))
+``` 
 
-A continuación vemos el cambio creado  
-db.getMongo().setReadPref("secondary")
-show dbs
-use basededatos
-show tables
-db.basededatos.find()
+Vemos la basededatos
+  ```   show dbs ``` 
+Creamos una nueva:
+```     use basededatos``` 
+
+Insertamos datos:
+```  db.basededatos.insertOne({name: "Mireia", age: 26}))``` 
+
+
+A continuación vemos el cambio creado en la instancia mongod-1;  
+``` kubectl exec -it mongod-0 -- bash
+    mongosh --quiet
+    db.getMongo().setReadPref("secondary")
+    show dbs
+    use basededatos
+    show tables
+    db.basededatos.find()
 ```
-Aqui podemos ver los cambios que se han añadido al pod
+
+Aqui podemos ver los cambios que se han añadido a la instancia mongod-1
 <img width="715" alt="Captura de pantalla 2021-11-29 a las 12 14 45" src="https://user-images.githubusercontent.com/26769446/143860432-bce0ca37-07cf-4fee-a44f-a15142d77a88.png">
 
 ## Diferencias que existiría si el montaje se hubiera realizado con el objeto de ReplicaSet
