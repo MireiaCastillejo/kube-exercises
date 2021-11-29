@@ -25,8 +25,14 @@ rs.initiate({ _id: "rs0", version: 1, members: [
  { _id: 1, host: "mongo-1.mongo-svc.default.svc.cluster.local:27017" }, 
  { _id: 2, host: "mongo-2.mongo-svc.default.svc.cluster.local:27017" } 
 ]});
+Vemos la basededatos
+    show dbs
+Creamos una nueva:
+    use basededatos
+Insertamos datos:
+    db.basededatos.insertOne({name: "Mireia", age: 26}))
 
-
+A continuación vemos el cambio creado  
 db.getMongo().setReadPref("secondary")
 show dbs
 use basededatos
