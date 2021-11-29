@@ -19,4 +19,8 @@ Por último verificamos que al superar el 50% de limite de cpu se estan creando 
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://nginx-svc; done"
 ````
 Para poder ver el autoescalado en directo ejecutamos en otra ventana el siguiente comando:<br /> 
-``` kubectl get hpa --watch```
+``` kubectl get hpa --watch```<br /> 
+
+<img width="965" alt="Captura de pantalla 2021-11-29 a las 14 05 53" src="https://user-images.githubusercontent.com/26769446/143876104-9afed335-c233-41c8-9941-4f0571ec5f9a.png"> <br /> 
+Vemos el autoescalado de pods
+<img width="965" alt="Captura de pantalla 2021-11-29 a las 14 06 18" src="https://user-images.githubusercontent.com/26769446/143876120-20b958a9-c65b-4738-9d35-b3dc563f2f94.png">
