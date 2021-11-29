@@ -35,6 +35,8 @@ use basededatos
 show tables
 db.basededatos.find()
 ```
+Aqui podemos ver los cambios que se han añadido al pod
+<img width="715" alt="Captura de pantalla 2021-11-29 a las 12 14 45" src="https://user-images.githubusercontent.com/26769446/143860432-bce0ca37-07cf-4fee-a44f-a15142d77a88.png">
 
 ## Diferencias que existiría si el montaje se hubiera realizado con el objeto de ReplicaSet
 
