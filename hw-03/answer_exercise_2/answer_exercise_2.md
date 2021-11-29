@@ -19,7 +19,8 @@ Ingresamos a el pod mongod-0 para habilitar el cluster de mongoDB
 
 ``mongosh --quiet``
 
-``` rs.initiate({ _id: "MainRepSet", version: 1,
+``` 
+rs.initiate({ _id: "MainRepSet", version: 1,
 ... members: [
 ...  { _id: 0, host: "mongod-0.mongodb-service.default.svc.cluster.local:27017" },
 ...  { _id: 1, host: "mongod-1.mongodb-service.default.svc.cluster.local:27017" },
@@ -27,7 +28,6 @@ Ingresamos a el pod mongod-0 para habilitar el cluster de mongoDB
 { ok: 1 } ```
 
 
-```sh
 kubectl exec -it mongo-1 sh
 db.getMongo().setReadPref("secondary")
 show dbs
