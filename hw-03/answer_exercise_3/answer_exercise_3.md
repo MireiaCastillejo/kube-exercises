@@ -14,16 +14,9 @@ A continuación se realiza el autoscaling con el siguiente comando <br />
 Verificamos el escalado:<br /> 
 ``` kubectl get hpa```<br /> 
 
-<<<<<<< HEAD
-Por último verificamos que al superar el 50% de limite de cpu se estan creando las replicas necesarias:
+Por último verificamos que al superar el 50% de limite de cpu se estan creando las replicas necesarias:<br /> 
 ````
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://nginx-svc; done"
 ````
-Para poder ver el autoescalado en directo ejecutamos en otra ventana el siguiente comando:
-=======
-Por último verificamso que al superar el 50% de limite de cpu se estan creando las replicas necesarias:<br /> 
-```` kubectl get hpa -w kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://nginx-svc; done"````<br /> 
-
 Para poder ver el autoescalado en directo ejecutamos en otra ventana el siguiente comando:<br /> 
->>>>>>> 0e383eefb0d6500b79338d1906845e372e1fe6ee
 ``` kubectl get hpa --watch```
