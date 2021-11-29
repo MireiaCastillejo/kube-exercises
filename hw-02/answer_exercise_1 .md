@@ -18,3 +18,4 @@ Accedemos dentro del html `cat index.html`
  ## Indica la calidad de servicio (QoS) establecida en el pod que acabas de crear. ¿Qué lo has mirado?
  Ejecutamos el comando:
     `kubectl get pod my-nginx --output=yaml`
+<img width="764" alt="Captura de pantalla 2021-11-20 a las 13 03 05" src="https://user-images.githubusercontent.com/26769446/142725743-e7eccb31-062c-45ea-a569-b004fb567a70.png">
