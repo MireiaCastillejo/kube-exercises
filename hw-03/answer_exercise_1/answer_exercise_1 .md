@@ -36,12 +36,28 @@ Creamos los objetos:
 ```
 
 Configuramos el archivo host añadiendo mireia.student.lasalle.com
+Ejecutamos el comando:
 
 ``` minikube tunnel```
 
 
 Verificar que el controlador de Ingress esta dirigiendo el tráfico a la URL:
-http://mireila.student.lasalle.com
+http://mireia.student.lasalle.com
 
 ## Apartado b:
+Generamos un certificado:
 
+```shell script
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem -subj "/CN=mireia.student.lasalle.com/O=mireia.student.lasalle.com"
+```
+
+Y creamos un `Secret` con los certificados:
+
+```shell script
+kubectl create secret tls secret-tls --key key.pem --cert cert.pem
+```
+Ejecutamos el comando
+
+``` minikube tunnel```
+
+Accedemos a la página

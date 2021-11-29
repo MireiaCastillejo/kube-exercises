@@ -28,7 +28,7 @@ rs.initiate({ _id: "MainRepSet", version: 1,
 { ok: 1 } 
 
 
-kubectl exec -it mongo-1 sh
+kubectl exec -it mongod-1 sh
 db.getMongo().setReadPref("secondary")
 show dbs
 use basededatos
