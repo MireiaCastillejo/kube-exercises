@@ -1,10 +1,10 @@
 # Ejercicio 2
    
 ## [StatefulSet] Crear un StatefulSet con 3 instancias de MongoDB (ejemplo visto en clase)
-## Se pide:
-## • Habilitar el clúster de MongoDB
-## • Realizar una operación en una de las instancias a nivel de configuración y verificar que el cambio se ha aplicado al resto de instancias
-## • Diferencias que existiría si el montaje se hubiera realizado con el objeto de ReplicaSet
+### Se pide:
+### • Habilitar el clúster de MongoDB
+### • Realizar una operación en una de las instancias a nivel de configuración y verificar que el cambio se ha aplicado al resto de instancias
+### • Diferencias que existiría si el montaje se hubiera realizado con el objeto de ReplicaSet
 
 
 Ejecutamos las siguientes instrucciones:
