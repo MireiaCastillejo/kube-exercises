@@ -43,5 +43,5 @@ Configuramos el archivo host añadiendo mireia.student.lasalle.com
 Verificar que el controlador de Ingress esta dirigiendo el tráfico a la URL:
 http://mireila.student.lasalle.com
 
-
+## Apartado b:
 

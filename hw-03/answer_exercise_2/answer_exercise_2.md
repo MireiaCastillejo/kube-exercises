@@ -13,11 +13,10 @@ Ejecutamos las siguientes instrucciones:
 
 ``kubectl apply -f statefulset.yaml``
 
-se usa cuando se quiere persistir volumenes y se usa para garantizar que puedan mantener el estado en los reinicios de los componentes
-Luego ingresamos a el pod mongo-0 para habilitar el cluster de mongoDB
+Ingresamos a el pod mongod-0 para habilitar el cluster de mongoDB
 
 `` kubectl exec -it mongod-0 -- bash``
-habilitamos el cluster con el siguiente comando.
+
 ``mongosh --quiet``
 
 ``` rs.initiate({ _id: "MainRepSet", version: 1,
@@ -27,22 +26,15 @@ habilitamos el cluster con el siguiente comando.
 ...  { _id: 2, host: "mongod-2.mongodb-service.default.svc.cluster.local:27017" } ]});
 { ok: 1 } ```
 
-Una vez realizada la operación de crear una base de datos y un objeto en mongo express verificamos ingresando a un pod en este caso en la instancia mongo-1, para ver el cambio que se realizó, se puede apreciar los resultados en las imagenes de captura.
 
-- $ kubectl exec -it mongo-1 sh
- db.getMongo().setReadPref("secondary")
+```sh
+kubectl exec -it mongo-1 sh
+db.getMongo().setReadPref("secondary")
 show dbs
 use basededatos
 show tables
 db.basededatos.find()
-[
-  {
-    _id: ObjectId("61a35da5860b43d1d1455543"),
-    name: 'Mireia',
-    age: 26
-  },
-  { _id: ObjectId("61a35db6860b43d1d1455544"), name: 'Sergi', age: 21 }
-]
+```
 
 ## Diferencias que existiría si el montaje se hubiera realizado con el objeto de ReplicaSet
 
