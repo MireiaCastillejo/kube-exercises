@@ -28,12 +28,12 @@ rs.initiate({ _id: "rs0", version: 1, members: [
 ``` 
 
 Vemos la basededatos<br /> 
-  ```   show dbs ``` 
+  ```   show dbs ``` <br /> 
 Creamos una nueva:<br /> 
-```     use basededatos``` 
+```     use basededatos``` <br /> 
 
 Insertamos datos:<br /> 
-```  db.basededatos.insertOne({name: "Mireia", age: 26}))``` 
+```  db.basededatos.insertOne({name: "Mireia", age: 26}))``` <br /> 
 
 
 A continuación vemos el cambio creado en la instancia mongod-1;  
