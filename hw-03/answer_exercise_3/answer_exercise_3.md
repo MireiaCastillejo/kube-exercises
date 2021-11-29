@@ -1,6 +1,6 @@
 EXERCISE 3
 ==========
-# [Horizontal Pod Autoscaler] Crea un objeto de kubernetes HPA, que escale a partir de las métricas CPU o memoria (a vuestra elección). Establece el umbral al 50% de CPU/memoria utilizada, cuando pase el umbral, automáticamente se deberá escalar al doble de replicas.
+## [Horizontal Pod Autoscaler] Crea un objeto de kubernetes HPA, que escale a partir de las métricas CPU o memoria (a vuestra elección). Establece el umbral al 50% de CPU/memoria utilizada, cuando pase el umbral, automáticamente se deberá escalar al doble de replicas.
 
 Habilitamos el addon metrics-server para que el HPA pueda ver el uso de la CPU <br /> 
 ``` minikube addons enable metrics-server``` <br /> 
