@@ -61,3 +61,4 @@ Ejecutamos el comando
 ``` minikube tunnel```
 
 Accedemos a la página
+<img width="766" alt="Captura de pantalla 2021-11-29 a las 11 42 07" src="https://user-images.githubusercontent.com/26769446/143856796-263db8ba-4c54-4a1a-ae13-5755350e86d2.png">
