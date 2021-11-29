@@ -39,7 +39,8 @@ Configuramos el archivo host añadiendo mireia.student.lasalle.com
 Ejecutamos el comando:
 
 ``` minikube tunnel```
-
+<br /> 
+<img width="766" alt="Captura de pantalla 2021-11-29 a las 12 08 25" src="https://user-images.githubusercontent.com/26769446/143857424-d3443314-7077-4f74-b4b9-3bfd3943bc5f.png">
 
 Verificar que el controlador de Ingress esta dirigiendo el tráfico a la URL:
 http://mireia.student.lasalle.com
